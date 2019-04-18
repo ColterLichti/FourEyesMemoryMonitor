@@ -15,6 +15,7 @@ namespace FourEyesMemoryMonitor
         public MainWindow()
         {
             InitializeComponent();
+            this.Icon = Properties.Resources.FourEyesIcon;
         }
     }
 }

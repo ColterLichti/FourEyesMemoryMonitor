@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FourEyesMemoryMonitor.Controllers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -13,10 +14,13 @@ namespace FourEyesMemoryMonitor
         /// </summary>
         [STAThread]
         static void Main()
-        {
+        {            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainWindow());
+
+
+            MainController controller = new MainController();
+            Application.Run(controller.AppWindow);
         }
     }
 }

@@ -13,11 +13,11 @@ namespace FourEyesMemoryMonitor.Properties {
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.9.0.0")]
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+    internal sealed partial class User : global::System.Configuration.ApplicationSettingsBase {
         
-        private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
+        private static User defaultInstance = ((User)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new User())));
         
-        public static Settings Default {
+        public static User Default {
             get {
                 return defaultInstance;
             }
@@ -25,7 +25,7 @@ namespace FourEyesMemoryMonitor.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("AppLauncher")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string ProcessName {
             get {
                 return ((string)(this["ProcessName"]));
@@ -34,7 +34,7 @@ namespace FourEyesMemoryMonitor.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        [global::System.Configuration.DefaultSettingValueAttribute("-1")]
         public int MemoryThreshold {
             get {
                 return ((int)(this["MemoryThreshold"]));
@@ -43,7 +43,7 @@ namespace FourEyesMemoryMonitor.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        [global::System.Configuration.DefaultSettingValueAttribute("-1")]
         public int Opacity {
             get {
                 return ((int)(this["Opacity"]));
@@ -52,7 +52,7 @@ namespace FourEyesMemoryMonitor.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("2")]
+        [global::System.Configuration.DefaultSettingValueAttribute("-1")]
         public int PollInterval {
             get {
                 return ((int)(this["PollInterval"]));
