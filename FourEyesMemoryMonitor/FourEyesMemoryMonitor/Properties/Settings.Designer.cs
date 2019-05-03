@@ -23,39 +23,63 @@ namespace FourEyesMemoryMonitor.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("AppLauncher")]
         public string ProcessName {
             get {
                 return ((string)(this["ProcessName"]));
             }
+            set {
+                this["ProcessName"] = value;
+            }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        [global::System.Configuration.DefaultSettingValueAttribute("-1")]
         public int MemoryThreshold {
             get {
                 return ((int)(this["MemoryThreshold"]));
             }
+            set {
+                this["MemoryThreshold"] = value;
+            }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        [global::System.Configuration.DefaultSettingValueAttribute("-1")]
         public int Opacity {
             get {
                 return ((int)(this["Opacity"]));
             }
+            set {
+                this["Opacity"] = value;
+            }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("2")]
+        [global::System.Configuration.DefaultSettingValueAttribute("-1")]
         public int PollInterval {
             get {
                 return ((int)(this["PollInterval"]));
+            }
+            set {
+                this["PollInterval"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool ControlPanelHidden {
+            get {
+                return ((bool)(this["ControlPanelHidden"]));
+            }
+            set {
+                this["ControlPanelHidden"] = value;
             }
         }
     }

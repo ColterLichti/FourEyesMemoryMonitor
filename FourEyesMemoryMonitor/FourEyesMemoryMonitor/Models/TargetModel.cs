@@ -13,5 +13,6 @@ namespace FourEyesMemoryMonitor.Models
         public int Opacity { get; set; }
         public int PollInterval { get; set; }
         public bool ProcessFound { get; set; } = false;
+        public int ProcessPeakMB { get; set; } = 0;
     }
 }

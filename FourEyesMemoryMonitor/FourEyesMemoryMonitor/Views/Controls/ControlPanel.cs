@@ -1,4 +1,7 @@
-﻿using System;
+﻿// The view representing the control panel for the app
+// Mostly passes events on to controller and updates itself based on the response
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -13,6 +16,7 @@ namespace FourEyesMemoryMonitor.Views.Controls
 {
     public partial class ControlPanel : UserControl
     {
+        // Delegates and custom events to interface with controller
         public delegate void ProcessNameChangeHandler(string processName);
         public delegate void ControlChangeHandler(int threshold, int opacity, int pollInterval);
 
