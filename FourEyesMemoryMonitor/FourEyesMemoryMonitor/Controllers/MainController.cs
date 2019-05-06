@@ -123,7 +123,18 @@ namespace FourEyesMemoryMonitor.Controllers
                     PC.CategoryName = "Process";
                     PC.CounterName = "Working Set - Private";
                     PC.InstanceName = proc.ProcessName;
-                    mem = (long)PC.NextValue();
+
+                    try
+                    {
+                        mem = (long)PC.NextValue();
+                    }
+                    catch(InvalidOperationException ex)
+                    {
+                        mem = 0;
+                    }
+                    
+
+
                     PC.Close();
                     PC.Dispose();
 
