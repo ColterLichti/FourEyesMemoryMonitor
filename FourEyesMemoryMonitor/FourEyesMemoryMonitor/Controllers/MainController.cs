@@ -148,6 +148,9 @@ namespace FourEyesMemoryMonitor.Controllers
                     {
                         procOverThresh = true;
                     }
+
+                    target.ProcessFound = true;
+                    _ControlPanel.UpdateUI(target);
                 }
 
                 target.ProcessPeakMB = (int)(peakProc / BYTES_PER_MEBIBYTE);
